@@ -1,16 +1,10 @@
 #Problem 1.1
 def product(numbers):
   result = 1
+  for i in range(len(numbers)):
+    result *= numbers[i]
 
-  if not numbers:
-    return result
-  result_type = int
-  for num in numbers:
-    result *= num
-    if isinstance(num, float):
-      result_type = float
-
-  return result_type(result)
+  return result
 
 #Problem 2.1
 def cumsum(numbers): 
