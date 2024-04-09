@@ -8,8 +8,8 @@ def geometric_mean(numbers):
 
 
 #Problem 2.2
-def running_means(numbers):
+def running_mean(nums):
   means = []
-  for i in range(len(cumsum(numbers))):
-    means.append(float((cumsum(numbers))[i] / (i+1)))
+  for i in range(len(cumsum(nums))):
+    means.append(float((cumsum(nums))[i] / (i+1)))
   return means

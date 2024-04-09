@@ -7,15 +7,15 @@ def product(numbers):
   return result
 
 #Problem 2.1
-def cumsum(numbers): 
-  cumulative_sums = []
+def cumsum(nums): 
+  sums = []
 
-  for i in range(len(numbers)):
+  for i in range(len(nums)):
     if i == 0:
-      cumulative_sums.append(numbers[0])
+      sums.append(nums[0])
     else:
-      cumulative_sums.append(cumulative_sums[i-1] + numbers[i])
-  return cumulative_sums
+      sums.append(sums[i-1] + nums[i])
+  return sums
 
 #Problem 4
 def is_increasing(numbers):
