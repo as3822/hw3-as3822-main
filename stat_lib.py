@@ -1,4 +1,4 @@
-from list_lib import product
+from list_lib import product, cumsum
 
 #Problem 1.2
 def geometric_mean(numbers):
@@ -10,6 +10,6 @@ def geometric_mean(numbers):
 #Problem 2.2
 def running_means(numbers):
   means = []
-  for i, num in range(len(numbers)):
-    means.append(sum(numbers[:i+1]) / (i+1))
+  for i in range(len(cumsum(numbers))):
+    means.append(float((cumsum(numbers))[i] / (i+1)))
   return means

@@ -10,11 +10,11 @@ def product(numbers):
 def cumsum(numbers): 
   cumulative_sums = []
 
-  for i, num in enumerate(numbers):
+  for i in range(len(numbers)):
     if i == 0:
-      cumulative_sums.append(num)
+      cumulative_sums.append(numbers[0])
     else:
-      cumulative_sums.append(cumulative_sums[i-1] + num)
+      cumulative_sums.append(cumulative_sums[i-1] + numbers[i])
   return cumulative_sums
 
 #Problem 4
