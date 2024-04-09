@@ -1,5 +1,6 @@
 from list_lib import product
 
+#Problem 1.2
 def geometric_mean(numbers):
     #product of all numbers
     product_of_numbers = product(numbers)
@@ -8,7 +9,7 @@ def geometric_mean(numbers):
     return float(geometric_mean)
 
 
-#Problem 
+#Problem 2.2
 def running_means(arr):
   means = []
   for i, num in range(len(arr)):

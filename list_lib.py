@@ -1,3 +1,4 @@
+#Problem 1.1
 def product(numbers):
   result = 1
 
@@ -11,7 +12,7 @@ def product(numbers):
 
   return result_type(result)
 
-
+#Problem 2.1
 def cumsum(numbers): 
   cumulative_sums = []
 
@@ -22,7 +23,7 @@ def cumsum(numbers):
       cumulative_sums.append(cumulative_sums[i-1] + num)
   return cumulative_sums
 
-
+#Problem 4
 def is_increasing(numbers):
   if len(numbers) < 2:
     return True 
