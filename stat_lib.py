@@ -8,7 +8,7 @@ def geometric_mean(numbers):
     return float(geometric_mean)
 
 
-
+#Problem 
 def running_means(arr):
   means = []
   for i, num in range(len(arr)):
